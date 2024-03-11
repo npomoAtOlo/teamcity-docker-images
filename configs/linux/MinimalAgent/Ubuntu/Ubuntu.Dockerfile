@@ -22,7 +22,7 @@ FROM ${ubuntuImage}
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8' DEBIAN_FRONTEND=noninteractive TZ="Europe/London" 
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales unzip && \
+    apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales unzip apt-transport-https python3-pip python3-setuptools software-properties-common virtualenv && \
 # Python
     apt-get install -y python3-venv && \
     # https://github.com/goodwithtech/dockle/blob/master/CHECKPOINT.md#dkl-di-0005
@@ -31,28 +31,6 @@ RUN apt-get update && \
     locale-gen en_US.UTF-8 && \
     rm -rf /var/lib/apt/lists/* && \
     useradd -m buildagent
-
-# JDK
-ARG jdkLinuxComponent
-ARG jdkLinuxComponentMD5SUM
-
-RUN set -eux; \
-    curl -LfsSo /tmp/openjdk.tar.gz ${jdkLinuxComponent}; \
-    echo "${jdkLinuxComponentMD5SUM} */tmp/openjdk.tar.gz" | md5sum -c -; \
-    mkdir -p /opt/java/openjdk; \
-    cd /opt/java/openjdk; \
-    tar -xf /tmp/openjdk.tar.gz --strip-components=1; \
-    chown -R root:root /opt/java; \
-    rm -rf /tmp/openjdk.tar.gz;
-
-ENV JAVA_HOME=/opt/java/openjdk \
-    JDK_HOME=/opt/java/openjdk \
-    PATH="/opt/java/openjdk/bin:$PATH"
-
-RUN update-alternatives --install /usr/bin/java java ${JDK_HOME}/bin/java 1 && \
-    update-alternatives --set java ${JDK_HOME}/bin/java && \
-    update-alternatives --install /usr/bin/javac javac ${JDK_HOME}/bin/javac 1 && \
-    update-alternatives --set javac ${JDK_HOME}/bin/javac
 
 # JDK preparation end
 ENV CONFIG_FILE=/data/teamcity_agent/conf/buildAgent.properties \
