@@ -74,41 +74,20 @@ RUN apt-get update && \
     git lfs install --system && \
     # https://github.com/goodwithtech/dockle/blob/master/CHECKPOINT.md#dkl-di-0005
     apt-get clean && rm -rf /var/lib/apt/lists/* && \
-# Perforce (p4 CLI)
-    apt-key adv --fetch-keys https://package.perforce.com/perforce.pubkey && \
-    (. /etc/os-release && \
-      echo "deb http://package.perforce.com/apt/$ID $VERSION_CODENAME release" > \
-      /etc/apt/sources.list.d/perforce.list ) && \
-    apt-get update && \
-    (. /etc/os-release && apt-get install -y helix-cli-base="${p4Version}~$VERSION_CODENAME" helix-cli="${p4Version}~$VERSION_CODENAME" ) && \
-    # https://github.com/goodwithtech/dockle/blob/master/CHECKPOINT.md#dkl-di-0005
-    apt-get clean && rm -rf /var/lib/apt/lists/* && \
-    # Docker & ContainerD
+# Docker & ContainerD
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
     add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" && \
     apt-cache policy docker-ce && \
     apt-get update && \
-    apt-get install -y  docker-ce=${dockerLinuxComponentVersion}-$(lsb_release -cs) \
-                        docker-ce-cli=${dockerLinuxComponentVersion}-$(lsb_release -cs) \
+    apt-get install -y  docker-ce=${dockerLinuxComponentVersion} \
+                        docker-ce-cli=${dockerLinuxComponentVersion} \
                         containerd.io:amd64=${containerdIoLinuxComponentVersion} \
-                        systemd && \
-    systemctl disable docker && \
-    sed -i -e 's/\r$//' /services/run-docker.sh && \
+                        systemd 
+RUN systemctl disable docker 
+RUN sed -i -e 's/\r$//' /services/run-docker.sh
 # Docker Compose
-    curl -SL "https://github.com/docker/compose/releases/download/${dockerComposeLinuxComponentVersion}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose && \
-# Dotnet
-    apt-get install -y --no-install-recommends ${dotnetLibs} && \
-    # https://github.com/goodwithtech/dockle/blob/master/CHECKPOINT.md#dkl-di-0005
-    apt-get clean && rm -rf /var/lib/apt/lists/* && \
-    mkdir -p /usr/share/dotnet && \
-# .NET 6.0
-    curl -SL ${dotnetLinuxComponent} --output /tmp/dotnet.tar.gz && \
-    echo "Downloaded .NET 6.0 (Linux AMD64) checksum: $(sha512sum tmp/dotnet.tar.gz)" && \
-    echo "${dotnetLinuxComponentSHA512} */tmp/dotnet.tar.gz" | sha512sum -c -; \
-    tar -zxf /tmp/dotnet.tar.gz -C /usr/share/dotnet && \
-    rm /tmp/dotnet.tar.gz && \
-    find /usr/share/dotnet -name "*.lzma" -type f -delete && \
-    ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet && \
+# https://github.com/docker/compose/releases/download/v2.24.7/docker-compose-linux-x86_64
+RUN curl -SL "https://github.com/docker/compose/releases/download/${dockerComposeLinuxComponentVersion}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose && \
 # Trigger .NET CLI first run experience by running arbitrary cmd to populate local package cache
     dotnet help && \
     dotnet --info && \

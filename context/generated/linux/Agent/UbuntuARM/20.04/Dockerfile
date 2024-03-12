@@ -1,12 +1,12 @@
 # Default arguments
-ARG containerdIoLinuxComponentVersion='1.4.12-1'
-ARG dockerComposeLinuxComponentVersion='1.28.5'
-ARG dockerLinuxComponentVersion='5:20.10.12~3-0~ubuntu'
+ARG containerdIoLinuxComponentVersion='1.6.28-1'
+ARG dockerComposeLinuxComponentVersion='v2.24.7'
+ARG dockerLinuxComponentVersion='5:25.0.4-1~ubuntu.22.04~jammy'
 ARG dotnetLibs='libc6 libgcc1 libgssapi-krb5-2 libicu66 libssl1.1 libstdc++6 zlib1g'
-ARG dotnetLinuxARM64Component='https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-linux-arm64.tar.gz'
+ARG dotnetLinuxARM64Component='https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-linux-arm64.tar.gz'
 ARG dotnetLinuxARM64ComponentSHA512='7f05a9774d79e694da5a6115d9916abf87a65e40bd6bdaa5dca1f705795436bc8e764242f7045207386a86732ef5519f60bdb516a3860e4860bca7ee91a21759'
-ARG gitLFSLinuxComponentVersion='2.9.2-1'
-ARG gitLinuxComponentVersion='1:2.43.2-0ppa1~ubuntu20.04.1'
+ARG gitLFSLinuxComponentVersion='3.0.2-1'
+ARG gitLinuxComponentVersion='1:2.43.2-0ppa1~ubuntu22.04.1'
 ARG repo='https://hub.docker.com/r/jetbrains/'
 ARG teamcityMinimalAgentImage='teamcity-minimal-agent:EAP-linux-arm64'
 

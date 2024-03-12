@@ -90,13 +90,13 @@ Installed components:
 - [Python venv](https://docs.python.org/3/library/venv.html#module-venv)
 - [JDK <img align="center" height="18" src="/docs/media/corretto.png"> Amazon Corretto x64 v.17.0.7.7.1 Checksum (MD5) 443750a02c28ff2807c80032ee2e8ebc](https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-linux-x64.tar.gz)
 - [Python venv](https://docs.python.org/3/library/venv.html#module-venv)
-- Git LFS v.2.9.2
+- Git LFS v.3.0.2
 - Git v.2.43.2
 - Mercurial
-- [Docker v.5:20.10.12](https://github.com/docker/cli/releases/tag/v20.10.12)
-- [Docker Compose v.1.28.5](https://github.com/docker/compose/releases/tag/1.28.5)
-- [Containerd.io v1.4.12-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) ee0a77d54e6d4917be7310ff0abb3bad5525bfb4beb1db0c215e65f64eb46511f5f12d6c7ff465a1d4ab38577e6a1950fde479ee94839c50e627020328a702de](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-linux-x64.tar.gz)
+- [Docker v.5:25.0.4-1~ubuntu.22.04~jammy](https://github.com/docker/cli/releases/tag/v20.10.12)
+- [Docker Compose v.v2.24.7](https://github.com/docker/compose/releases/tag/v2.24.7)
+- [Containerd.io v1.6.28-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) ee0a77d54e6d4917be7310ff0abb3bad5525bfb4beb1db0c215e65f64eb46511f5f12d6c7ff465a1d4ab38577e6a1950fde479ee94839c50e627020328a702de](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-linux-x64.tar.gz)
 - Perforce Helix Core client (p4) [2022.2-2531894](https://www.perforce.com/products/helix-core)
 
 Container platform: linux
@@ -104,7 +104,7 @@ Container platform: linux
 Docker build commands:
 
 ```
-docker pull ubuntu:20.04
+docker pull mcr.microsoft.com/dotnet/sdk:8.0.200-jammy-amd64
 echo TeamCity/webapps > context/.dockerignore
 echo TeamCity/devPackage >> context/.dockerignore
 echo TeamCity/lib >> context/.dockerignore
@@ -131,12 +131,12 @@ Installed components:
 - [JDK <img align="center" height="18" src="/docs/media/corretto.png"> Amazon Corretto aarch64 v.17.0.7.7.1 Checksum (MD5) c55e3d0615fac07f948ac3adaed818e9](https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-linux-aarch64.tar.gz)
 - [Python venv](https://docs.python.org/3/library/venv.html#module-venv)
 - Git v.2.43.2
-- Git LFS v.2.9.2
+- Git LFS v.3.0.2
 - Mercurial
-- [Docker v.5:20.10.12](https://github.com/docker/cli/releases/tag/v20.10.12)
-- [Containerd.io v1.4.12-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
-- [Docker Compose v.1.28.5](https://github.com/docker/compose/releases/tag/1.28.5)
-- [.NET SDK v.6.0.413 (LTS) ARM64 Checksum (SHA512) 7f05a9774d79e694da5a6115d9916abf87a65e40bd6bdaa5dca1f705795436bc8e764242f7045207386a86732ef5519f60bdb516a3860e4860bca7ee91a21759](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-linux-arm64.tar.gz)
+- [Docker v.5:25.0.4-1~ubuntu.22.04~jammy](https://github.com/docker/cli/releases/tag/v20.10.12)
+- [Containerd.io v1.6.28-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
+- [Docker Compose v.v2.24.7](https://github.com/docker/compose/releases/tag/v2.24.7)
+- [.NET SDK v.8.0.202 (LTS) ARM64 Checksum (SHA512) 7f05a9774d79e694da5a6115d9916abf87a65e40bd6bdaa5dca1f705795436bc8e764242f7045207386a86732ef5519f60bdb516a3860e4860bca7ee91a21759](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-linux-arm64.tar.gz)
 
 Container platform: linux
 
@@ -171,12 +171,12 @@ Installed components:
 - [JDK <img align="center" height="18" src="/docs/media/corretto.png"> Amazon Corretto aarch64 v.17.0.7.7.1 Checksum (MD5) c55e3d0615fac07f948ac3adaed818e9](https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-linux-aarch64.tar.gz)
 - [Python venv](https://docs.python.org/3/library/venv.html#module-venv)
 - Git v.2.43.2
-- Git LFS v.2.9.2
+- Git LFS v.3.0.2
 - Mercurial
-- [Docker v.5:20.10.12](https://github.com/docker/cli/releases/tag/v20.10.12)
-- [Containerd.io v1.4.12-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
-- [Docker Compose v.1.28.5](https://github.com/docker/compose/releases/tag/1.28.5)
-- [.NET SDK v.6.0.413 (LTS) ARM64 Checksum (SHA512) 7f05a9774d79e694da5a6115d9916abf87a65e40bd6bdaa5dca1f705795436bc8e764242f7045207386a86732ef5519f60bdb516a3860e4860bca7ee91a21759](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-linux-arm64.tar.gz)
+- [Docker v.5:25.0.4-1~ubuntu.22.04~jammy](https://github.com/docker/cli/releases/tag/v20.10.12)
+- [Containerd.io v1.6.28-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
+- [Docker Compose v.v2.24.7](https://github.com/docker/compose/releases/tag/v2.24.7)
+- [.NET SDK v.8.0.202 (LTS) ARM64 Checksum (SHA512) 7f05a9774d79e694da5a6115d9916abf87a65e40bd6bdaa5dca1f705795436bc8e764242f7045207386a86732ef5519f60bdb516a3860e4860bca7ee91a21759](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-linux-arm64.tar.gz)
 
 Container platform: linux
 
@@ -211,13 +211,13 @@ Installed components:
 
 - [JDK <img align="center" height="18" src="/docs/media/corretto.png"> Amazon Corretto x64 v.17.0.7.7.1 Checksum (MD5) 443750a02c28ff2807c80032ee2e8ebc](https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-linux-x64.tar.gz)
 - [Python venv](https://docs.python.org/3/library/venv.html#module-venv)
-- Git LFS v.2.9.2
+- Git LFS v.3.0.2
 - Git v.2.43.2
 - Mercurial
-- [Docker v.5:20.10.12](https://github.com/docker/cli/releases/tag/v20.10.12)
-- [Docker Compose v.1.28.5](https://github.com/docker/compose/releases/tag/1.28.5)
-- [Containerd.io v1.4.12-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) ee0a77d54e6d4917be7310ff0abb3bad5525bfb4beb1db0c215e65f64eb46511f5f12d6c7ff465a1d4ab38577e6a1950fde479ee94839c50e627020328a702de](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-linux-x64.tar.gz)
+- [Docker v.5:25.0.4-1~ubuntu.22.04~jammy](https://github.com/docker/cli/releases/tag/v20.10.12)
+- [Docker Compose v.v2.24.7](https://github.com/docker/compose/releases/tag/v2.24.7)
+- [Containerd.io v1.6.28-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) ee0a77d54e6d4917be7310ff0abb3bad5525bfb4beb1db0c215e65f64eb46511f5f12d6c7ff465a1d4ab38577e6a1950fde479ee94839c50e627020328a702de](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-linux-x64.tar.gz)
 - Perforce Helix Core client (p4) [2022.2-2531894](https://www.perforce.com/products/helix-core)
 
 Container platform: linux
@@ -225,7 +225,7 @@ Container platform: linux
 Docker build commands:
 
 ```
-docker pull ubuntu:20.04
+docker pull mcr.microsoft.com/dotnet/sdk:8.0.200-jammy-amd64
 echo TeamCity/webapps > context/.dockerignore
 echo TeamCity/devPackage >> context/.dockerignore
 echo TeamCity/lib >> context/.dockerignore
@@ -253,7 +253,7 @@ Installed components:
 - [JDK <img align="center" height="18" src="/docs/media/corretto.png"> Amazon Corretto x64 v.17.0.7.7.1 Checksum (MD5) feb7eab99c647a0b4347be9f0a3276de](https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-windows-x64-jdk.zip)
 - [PowerShell](https://github.com/PowerShell/PowerShell#get-powershell)
 - [Git x64 v.2.43.0 Checksum (SHA256) 1905d93068e986258fafc69517df8fddff829bb2a289c1fa4dcc6cdf720ddf36](https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/MinGit-2.43.0-64-bit.zip)
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-win-x64.zip)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-win-x64.zip)
 
 Container platform: windows
 
@@ -288,7 +288,7 @@ Installed components:
 - [JDK <img align="center" height="18" src="/docs/media/corretto.png"> Amazon Corretto x64 v.17.0.7.7.1 Checksum (MD5) feb7eab99c647a0b4347be9f0a3276de](https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-windows-x64-jdk.zip)
 - [PowerShell](https://github.com/PowerShell/PowerShell#get-powershell)
 - [Git x64 v.2.43.0 Checksum (SHA256) 1905d93068e986258fafc69517df8fddff829bb2a289c1fa4dcc6cdf720ddf36](https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/MinGit-2.43.0-64-bit.zip)
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-win-x64.zip)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-win-x64.zip)
 
 Container platform: windows
 
@@ -324,7 +324,7 @@ Installed components:
 - [Git x64 v.2.43.0 Checksum (SHA256) 1905d93068e986258fafc69517df8fddff829bb2a289c1fa4dcc6cdf720ddf36](https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/MinGit-2.43.0-64-bit.zip)
 - [PowerShell](https://github.com/PowerShell/PowerShell#get-powershell)
 - [Mercurial x64 v.5.9.1](https://www.mercurial-scm.org/release/windows/mercurial-5.9.1-x64.msi)
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-win-x64.zip)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-win-x64.zip)
 
 Container platform: windows
 
@@ -359,7 +359,7 @@ Installed components:
 - [Git x64 v.2.43.0 Checksum (SHA256) 1905d93068e986258fafc69517df8fddff829bb2a289c1fa4dcc6cdf720ddf36](https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/MinGit-2.43.0-64-bit.zip)
 - [PowerShell](https://github.com/PowerShell/PowerShell#get-powershell)
 - [Mercurial x64 v.5.9.1](https://www.mercurial-scm.org/release/windows/mercurial-5.9.1-x64.msi)
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-win-x64.zip)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-win-x64.zip)
 
 Container platform: windows
 
@@ -394,10 +394,10 @@ Installed components:
 - Git LFS v.2.3.4
 - Git v.2.41.0
 - Mercurial
-- [Docker v.5:20.10.12](https://github.com/docker/cli/releases/tag/v20.10.12)
-- [Docker Compose v.1.28.5](https://github.com/docker/compose/releases/tag/1.28.5)
-- [Containerd.io v1.4.12-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) ee0a77d54e6d4917be7310ff0abb3bad5525bfb4beb1db0c215e65f64eb46511f5f12d6c7ff465a1d4ab38577e6a1950fde479ee94839c50e627020328a702de](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-linux-x64.tar.gz)
+- [Docker v.5:25.0.4-1~ubuntu.22.04~jammy](https://github.com/docker/cli/releases/tag/v20.10.12)
+- [Docker Compose v.v2.24.7](https://github.com/docker/compose/releases/tag/v2.24.7)
+- [Containerd.io v1.6.28-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) ee0a77d54e6d4917be7310ff0abb3bad5525bfb4beb1db0c215e65f64eb46511f5f12d6c7ff465a1d4ab38577e6a1950fde479ee94839c50e627020328a702de](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-linux-x64.tar.gz)
 - Perforce Helix Core client (p4) [2022.2-2531894](https://www.perforce.com/products/helix-core)
 
 Container platform: linux
@@ -429,13 +429,13 @@ Installed components:
 
 - [JDK <img align="center" height="18" src="/docs/media/corretto.png"> Amazon Corretto x64 v.17.0.7.7.1 Checksum (MD5) 443750a02c28ff2807c80032ee2e8ebc](https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-linux-x64.tar.gz)
 - [Python venv](https://docs.python.org/3/library/venv.html#module-venv)
-- Git LFS v.2.9.2
+- Git LFS v.3.0.2
 - Git v.2.43.2
 - Mercurial
-- [Docker v.5:20.10.12](https://github.com/docker/cli/releases/tag/v20.10.12)
-- [Docker Compose v.1.28.5](https://github.com/docker/compose/releases/tag/1.28.5)
-- [Containerd.io v1.4.12-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) ee0a77d54e6d4917be7310ff0abb3bad5525bfb4beb1db0c215e65f64eb46511f5f12d6c7ff465a1d4ab38577e6a1950fde479ee94839c50e627020328a702de](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-linux-x64.tar.gz)
+- [Docker v.5:25.0.4-1~ubuntu.22.04~jammy](https://github.com/docker/cli/releases/tag/v20.10.12)
+- [Docker Compose v.v2.24.7](https://github.com/docker/compose/releases/tag/v2.24.7)
+- [Containerd.io v1.6.28-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) ee0a77d54e6d4917be7310ff0abb3bad5525bfb4beb1db0c215e65f64eb46511f5f12d6c7ff465a1d4ab38577e6a1950fde479ee94839c50e627020328a702de](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-linux-x64.tar.gz)
 - Perforce Helix Core client (p4) [2022.2-2531894](https://www.perforce.com/products/helix-core)
 
 Container platform: linux
@@ -470,10 +470,10 @@ Installed components:
 - Git v.2.41.0
 - Git LFS v.2.3.4
 - Mercurial
-- [Docker v.5:20.10.12](https://github.com/docker/cli/releases/tag/v20.10.12)
-- [Containerd.io v1.4.12-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
-- [Docker Compose v.1.28.5](https://github.com/docker/compose/releases/tag/1.28.5)
-- [.NET SDK v.6.0.413 (LTS) ARM64 Checksum (SHA512) 7f05a9774d79e694da5a6115d9916abf87a65e40bd6bdaa5dca1f705795436bc8e764242f7045207386a86732ef5519f60bdb516a3860e4860bca7ee91a21759](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-linux-arm64.tar.gz)
+- [Docker v.5:25.0.4-1~ubuntu.22.04~jammy](https://github.com/docker/cli/releases/tag/v20.10.12)
+- [Containerd.io v1.6.28-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
+- [Docker Compose v.v2.24.7](https://github.com/docker/compose/releases/tag/v2.24.7)
+- [.NET SDK v.8.0.202 (LTS) ARM64 Checksum (SHA512) 7f05a9774d79e694da5a6115d9916abf87a65e40bd6bdaa5dca1f705795436bc8e764242f7045207386a86732ef5519f60bdb516a3860e4860bca7ee91a21759](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-linux-arm64.tar.gz)
 
 Container platform: linux
 
@@ -505,12 +505,12 @@ Installed components:
 - [JDK <img align="center" height="18" src="/docs/media/corretto.png"> Amazon Corretto aarch64 v.17.0.7.7.1 Checksum (MD5) c55e3d0615fac07f948ac3adaed818e9](https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-linux-aarch64.tar.gz)
 - [Python venv](https://docs.python.org/3/library/venv.html#module-venv)
 - Git v.2.43.2
-- Git LFS v.2.9.2
+- Git LFS v.3.0.2
 - Mercurial
-- [Docker v.5:20.10.12](https://github.com/docker/cli/releases/tag/v20.10.12)
-- [Containerd.io v1.4.12-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
-- [Docker Compose v.1.28.5](https://github.com/docker/compose/releases/tag/1.28.5)
-- [.NET SDK v.6.0.413 (LTS) ARM64 Checksum (SHA512) 7f05a9774d79e694da5a6115d9916abf87a65e40bd6bdaa5dca1f705795436bc8e764242f7045207386a86732ef5519f60bdb516a3860e4860bca7ee91a21759](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-linux-arm64.tar.gz)
+- [Docker v.5:25.0.4-1~ubuntu.22.04~jammy](https://github.com/docker/cli/releases/tag/v20.10.12)
+- [Containerd.io v1.6.28-1](https://ubuntu.pkgs.org/20.04/docker-ce-stable-amd64/containerd.io_1.4.12-1_amd64.deb.html)
+- [Docker Compose v.v2.24.7](https://github.com/docker/compose/releases/tag/v2.24.7)
+- [.NET SDK v.8.0.202 (LTS) ARM64 Checksum (SHA512) 7f05a9774d79e694da5a6115d9916abf87a65e40bd6bdaa5dca1f705795436bc8e764242f7045207386a86732ef5519f60bdb516a3860e4860bca7ee91a21759](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-linux-arm64.tar.gz)
 
 Container platform: linux
 
@@ -539,7 +539,7 @@ The docker image is not available and may be created manually.
 
 Installed components:
 
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-win-x64.zip)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-win-x64.zip)
 - [PowerShell](https://github.com/PowerShell/PowerShell#get-powershell)
 
 Container platform: windows
@@ -571,7 +571,7 @@ Installed components:
 - [JDK <img align="center" height="18" src="/docs/media/corretto.png"> Amazon Corretto x64 v.17.0.7.7.1 Checksum (MD5) feb7eab99c647a0b4347be9f0a3276de](https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-windows-x64-jdk.zip)
 - [PowerShell](https://github.com/PowerShell/PowerShell#get-powershell)
 - [Git x64 v.2.43.0 Checksum (SHA256) 1905d93068e986258fafc69517df8fddff829bb2a289c1fa4dcc6cdf720ddf36](https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/MinGit-2.43.0-64-bit.zip)
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-win-x64.zip)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-win-x64.zip)
 
 Container platform: windows
 
@@ -603,7 +603,7 @@ Installed components:
 - [JDK <img align="center" height="18" src="/docs/media/corretto.png"> Amazon Corretto x64 v.17.0.7.7.1 Checksum (MD5) feb7eab99c647a0b4347be9f0a3276de](https://corretto.aws/downloads/resources/17.0.7.7.1/amazon-corretto-17.0.7.7.1-windows-x64-jdk.zip)
 - [PowerShell](https://github.com/PowerShell/PowerShell#get-powershell)
 - [Git x64 v.2.43.0 Checksum (SHA256) 1905d93068e986258fafc69517df8fddff829bb2a289c1fa4dcc6cdf720ddf36](https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/MinGit-2.43.0-64-bit.zip)
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-win-x64.zip)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-win-x64.zip)
 
 Container platform: windows
 
@@ -636,7 +636,7 @@ Installed components:
 - [Git x64 v.2.43.0 Checksum (SHA256) 1905d93068e986258fafc69517df8fddff829bb2a289c1fa4dcc6cdf720ddf36](https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/MinGit-2.43.0-64-bit.zip)
 - [PowerShell](https://github.com/PowerShell/PowerShell#get-powershell)
 - [Mercurial x64 v.5.9.1](https://www.mercurial-scm.org/release/windows/mercurial-5.9.1-x64.msi)
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-win-x64.zip)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-win-x64.zip)
 
 Container platform: windows
 
@@ -667,7 +667,7 @@ Installed components:
 - [Git x64 v.2.43.0 Checksum (SHA256) 1905d93068e986258fafc69517df8fddff829bb2a289c1fa4dcc6cdf720ddf36](https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/MinGit-2.43.0-64-bit.zip)
 - [PowerShell](https://github.com/PowerShell/PowerShell#get-powershell)
 - [Mercurial x64 v.5.9.1](https://www.mercurial-scm.org/release/windows/mercurial-5.9.1-x64.msi)
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-win-x64.zip)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-win-x64.zip)
 
 Container platform: windows
 
@@ -699,7 +699,7 @@ Installed components:
 - [Git x64 v.2.43.0 Checksum (SHA256) 1905d93068e986258fafc69517df8fddff829bb2a289c1fa4dcc6cdf720ddf36](https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/MinGit-2.43.0-64-bit.zip)
 - [PowerShell](https://github.com/PowerShell/PowerShell#get-powershell)
 - [Mercurial x64 v.5.9.1](https://www.mercurial-scm.org/release/windows/mercurial-5.9.1-x64.msi)
-- [.NET SDK v.6.0.413 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/6.0.413/dotnet-sdk-6.0.413-win-x64.zip)
+- [.NET SDK v.8.0.202 (LTS) x86 Checksum (SHA512) a9e1bbb52484ad0667b258451ebb6b47ce6c7b788c015aee8a86c5e0c4dcf4ee8c82d796921869d64c92bb2afef2c7ceea09cfe255d8519d48f2471a098c361e](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/8.0.202/dotnet-sdk-8.0.202-win-x64.zip)
 
 Container platform: windows
 
